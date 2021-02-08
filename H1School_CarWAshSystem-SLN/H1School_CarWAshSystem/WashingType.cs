@@ -9,10 +9,15 @@ namespace H1School_CarWAshSystem
     {
         public List<Processes> Process { get; set; }
 
-        public WashingType(Processes process)
+        public WashingType(List<Processes> process)
         {
             Process = new List<Processes>();
             Process = process;
+        }
+
+        public void AddProcess(Processes process)
+        {
+            Process.Add(process);
         }
     }
 }
