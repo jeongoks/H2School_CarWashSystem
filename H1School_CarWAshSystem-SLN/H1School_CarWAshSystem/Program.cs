@@ -10,6 +10,7 @@ namespace H1School_CarWAshSystem
     {
         static void Main(string[] args)
         {
+
         }
     }
 }

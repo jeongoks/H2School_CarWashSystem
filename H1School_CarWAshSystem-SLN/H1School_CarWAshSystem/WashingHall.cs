@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
 namespace H1School_CarWAshSystem
 {
     public class WashingHall
     {
-        public List<Vehicle> Vehicle { get; set; }
+        public List<Vehicle> VehicleInHall { get; set; }
 
         public List<WashingType> WashType { get; set; }
 
@@ -15,6 +16,11 @@ namespace H1School_CarWAshSystem
         {
             WashType = new List<WashingType>();
             WashType = types;
+        }
+
+        public void AddWashType(WashingType type)
+        {
+            WashType.Add(type);
         }
     }
 }
